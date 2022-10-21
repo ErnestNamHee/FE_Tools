@@ -31,7 +31,7 @@ cat <<EOT >> /home/ma-user/.local/share/jupyter/kernels/$Kernel_Name/kernel.json
  "display_name": "$Kernel_Name",
  "language": "python",
  "env": {
-        "PATH": "/opt/conda/envs/my-env/bin/:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/:/bin/:/sbin/",
+        "PATH": "/opt/conda/envs/my-env/bin/:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
         "http_proxy": "http://proxy-notebook.modelarts.com:8083",
         "https_proxy": "http://proxy-notebook.modelarts.com:8083",
         "ftp_proxy": "http://proxy-notebook.modelarts.com:8083",
