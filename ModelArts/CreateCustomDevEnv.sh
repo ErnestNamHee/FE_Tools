@@ -5,7 +5,7 @@
 Python_Version='3.10.0'
 Conda_Env_Name='ModelArtsEnv01'
 Kernel_Name='pytorch-python-3.10'  #Please use small capital only for the Kernel environment name
-Kernel_Display_Name="Pytorch-Python-3.10" # You can use small or large capital letter
+Kernel_Display_Name="pytorch-python-3.10" # You can use small or large capital letter
 
 #### Create Conda Environment
 conda create --quiet --yes -n $Conda_Env_Name python=$Python_Version
