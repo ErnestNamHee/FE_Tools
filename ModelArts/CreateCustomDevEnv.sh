@@ -29,7 +29,7 @@ cat <<EOT >> /home/ma-user/.local/share/jupyter/kernels/$Kernel_Name/kernel.json
   "-f",
   "{connection_file}"
  ],
- "display_name": "$Kernel_Name",
+ "display_name": "$Kernel_Display_Name",
  "language": "python",
  "env": {
         "PATH": "/opt/conda/envs/my-env/bin/:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
