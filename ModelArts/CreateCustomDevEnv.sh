@@ -12,7 +12,7 @@ conda create --quiet --yes -n $Conda_Env_Name python=$Python_Version
 source /home/ma-user/anaconda3/bin/activate /opt/conda/envs/$Conda_Env_Name
 
 #### Install Mandatory package
-pip install jupyter 
+pip install jupyter numpy scipy scikit-learn pillow
 
 #### Create the iPython Kernel
 python3 -m ipykernel install --user --name "$Kernel_Name"
