@@ -1,15 +1,24 @@
 #!/bin/bash
 #Create env
+
+#### Set Parameters
 Python_Version='3.10.0'
 Conda_Env_Name='ModelArtsEnv01'
 Kernel_Name='Pytorch-Python-3.10'
-conda create --quiet --yes -n my-env python=$Python_Version
+
+#### Create Conda Environment
+conda create --quiet --yes -n $Conda_Env_Name python=$Python_Version
 #source to env
 source /home/ma-user/anaconda3/bin/activate /opt/conda/envs/$Conda_Env_Name
-#Mandatory package
-pip install jupyter
+
+#### Install Mandatory package
+pip install jupyter 
+
+#### Create the iPython Kernel
 python3 -m ipykernel install --user --name "$Kernel_Name"
 > /home/ma-user/.local/share/jupyter/kernels/$Kernel_Name/kernel.json
+
+#### Update the Kernel json file
 cat <<EOT >> /home/ma-user/.local/share/jupyter/kernels/$Kernel_Name/kernel.json
 {
  "argv": [
